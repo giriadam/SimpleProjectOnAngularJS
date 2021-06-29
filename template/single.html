@@ -1,0 +1,9 @@
+<div class="row">
+   <div class="col-lg-12">
+      <h1>{{movie.Title}}</h1>
+      <p>Description: {{movie.Description}}</p>
+      <p>Genre: {{movie.Genre}}</p>
+      <p ng-hide="movie.Runtime==0">Runtime:{{movie.Runtime}}</p> 
+      <a ng-href="{{movie.TrailerLink}}" target="_blank"><img ng-src="{{movie.PosterPath}}" alt=""></a>
+   </div>
+</div>
